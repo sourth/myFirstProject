@@ -1,0 +1,86 @@
+
+@textColor : #999;
+@titleColor:#333;
+@titleColor1:#666;
+#userList{
+    overflow: auto;
+}
+
+#userList .userListTable{
+    width: 100%;
+}
+
+.userRouteTable{
+	width: 40%;
+	margin-left: 22%;
+}
+
+.userRouteTable td{
+	padding: 5px 0;
+	font-size: 2.4em;
+	line-height: 30px;
+	color: #333;
+}
+
+.userRouteTable td:nth-of-type(2){
+	width: 63%;
+	color: @textColor;
+}
+
+.userRouteTable td select{
+	width: 38.4%;
+	border: 1px solid #cdcdcd;
+	font-size: 1em;
+	outline: none;
+	height: 28px;
+	color: #666;
+}
+
+.userRouteTable td input{
+	font-size: 1em;
+	outline: none;
+	color: @textColor;
+	padding: 3px 5%;
+	border: 1px solid @textColor;
+}
+
+.userSaveStatus{
+	cursor: pointer;
+	width: 27%;
+	background: #e7503d;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 2.4em;
+	margin-left: 30%;
+	margin-top: 50px;
+}
+.chooseType{
+	li{
+		font-size:17px;
+	}
+}
+#userInfo{
+	.userMessage{
+		width:60%;
+		margin:0 auto;
+		h3{
+			color:@titleColor;
+			font-size:2em;
+			line-height:40px;
+			padding-left:70px;
+		}
+		span{
+			display:inline-block;
+			line-height:36px;
+			font-size:1.8em;
+			color:@titleColor1;
+		}
+		.modelL{
+			width:30%;
+			text-align:right;
+			margin-right:15px;
+		}
+	}
+}

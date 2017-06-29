@@ -1,0 +1,145 @@
+@tableTextColor:#999;
+@borderColor:#ddd;
+@mainBgColor:#E6503C;
+@backgroundColor:#eee;
+@titleColor:#333;
+@titleColor1:#666;
+
+#analyze{
+  padding:0 3%;
+  .analyzeItems{
+    padding:20px 2%;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    a{
+      flex:1;
+      background:@backgroundColor;
+      display:block;
+      color:@titleColor;
+      padding:10px 0;
+      p{
+        line-height:30px;
+        text-align:center;
+        font-size:2em;
+      }
+    }
+  }
+  #analyzePeople,#analyzeMoney,#analyzeQuanlity{
+    padding:0 2%;
+    #donationMoney,#peopleMain,#peopleLocation,#quantityMain,#quantityType,#quantityLocation{
+      margin:0 auto;
+    }
+  }
+
+}
+.analyzeData{
+  position:absolute;
+  top: 36px;
+  line-height: 30px;
+  width: 99%;
+  border: solid 1px #ddd;
+  background: #fff;
+  font-size: 1.8em;
+  max-height:200px;
+  overflow-y:auto;
+  z-index:10;
+  display:none;
+  li{
+    box-sizing: border-box;
+    padding-left: 25px;
+    cursor:pointer;
+    width:100%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  li:hover{
+    background:@mainBgColor;
+    color:#fff;
+  }
+}
+.donateMoney,.peopleMain,.peopleLocation,.quantityMain,.quantityLocation{
+  width:80%;
+  height:500px;
+}
+.quantityType{
+  width:400px;
+  height:400px;
+}
+#app{
+  .am-datepicker tr.am-datepicker-header{
+    font-size:1.8em;
+  }
+  .am-datepicker td{
+    font-size:1.8em;
+  }
+  .am-datepicker-time-box strong{
+    font-size:2em;
+  }
+  .am-datepicker-time-box em{
+    font-size:2em;
+  }
+  .am-icon-clock-o,.am-icon-calendar{
+    font-size:2.8em;
+  }
+}
+.analyzeFirstDatePicker{
+  padding-left:30px;
+}
+.datetimepicker table{
+  border-spacing:0px;
+}
+.datetimepicker table th i{
+  line-height:34px;
+  font-size:18px;
+}
+#firstPage-firstDate{
+  #chooseType{
+    font-size:2em;
+    height:30px;
+  }
+}
+.analyze-box-style{
+  padding-right: 100px;
+  padding-left:90px;
+  margin-bottom:20px;
+  overflow:hidden;
+}
+.analyzeTitle{
+  color:#333;
+  font-weight:900;
+  line-height:30px;
+  font-size:2.4em;
+  margin-bottom:20px;
+}
+#donationTotalMoney{
+  padding-bottom:200px;
+}
+.date-time-picker{
+  width:180px;
+  height:30px;
+  cursor:pointer;
+  padding-left:15px;
+  font-size:2em;
+}
+.timeTitle{
+  line-height: 32px;
+  font-size: 2em;
+  color: #999;
+}
+.data-title{
+  line-height: 42px;
+  font-size: 2em;
+  color: #333;
+  font-weight: 600;
+}
+.analyze-data-span{
+  line-height: 42px;
+  font-size: 2em;
+  color: #666;
+  width: 13%;
+  text-align: center;
+  display: inline-block
+
+}

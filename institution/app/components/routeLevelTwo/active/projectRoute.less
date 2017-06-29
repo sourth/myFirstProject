@@ -1,0 +1,606 @@
+
+@tableTextColor:#999;
+@borderColor:#ddd;
+@mainBgColor:#E6503C;
+@backgroundColor:#eee;
+@titleColor:#333;
+@titleColor1:#666;
+
+
+/*public*/
+.tableOne{
+    display: inline-table;
+	width: 46%;
+}
+
+.tableTwo{
+    display: inline-table;
+	width: 51%;
+	margin-left: 3%;
+}
+
+.projectRouteTable td{
+	vertical-align: top;
+	padding: 5px 0;
+	font-size: 2em;
+	line-height: 30px;
+	color: #333;
+}
+
+.tableOne td:nth-of-type(1),.tableTwo td:nth-of-type(1){
+	width: 27%;
+	text-align:right;
+	padding-right:15px;
+}
+
+.tableOne td:nth-of-type(2){
+	width: 60%;
+
+}
+
+.projectRouteTable td:nth-of-type(2){
+    word-break: break-all;
+	width: 70%;
+	color: @tableTextColor;
+}
+#otherCalendarContainer{
+	width:70%;
+	.datePicked{
+		font-size:1em;
+	}
+	.main td{
+		padding:0;
+		line-height:32px;
+	}
+}
+.projectRouteTable td select{
+	width: 34%;
+	border: 1px solid @borderColor;
+	font-size: 1em;
+	outline: none;
+	height: 30px;
+	line-height:36px;
+	color: #666;
+}
+
+.projectRouteTable input{
+	font-size: 1em;
+	outline: none;
+	color: @tableTextColor;
+	width: 70%;
+	border: 1px solid #ddd;
+	line-height:28px;
+	height:28px;
+	box-sizing:border-box;
+	padding-left:5px;
+}
+
+.projectRouteTable textarea{
+	resize: none;
+	overflow: auto;
+	width: 100%;
+	height: 112px;
+	font-size: 1em;
+	outline: none;
+}
+
+
+/*projectCheck*/
+.projectCheckSelect{
+	border: 1px solid @borderColor;
+	font-size: 1em;
+	outline: none;
+	height: 28px;
+	color: @tableTextColor;
+	width: 35%;
+}
+
+/*projectCompile*/
+.projectCompileSelect{
+	border: 1px solid @borderColor;
+	font-size: 1em;
+	outline: none;
+	height: 28px;
+	color: @tableTextColor;
+	width: 35%;
+	padding-left: 5%;
+}
+
+.projectCompileSaveStatus{
+	margin-top: 172px;
+}
+
+.fullWidth{
+	width: 100%;
+}
+
+.tableTwo .specialWidth{
+	width: 70%;
+}
+
+.tableTwo .specialSelect{
+	width: 80%;
+}
+
+.tableTwo .projectCompileSpecialTd{
+	padding-left: 3.6%;
+}
+
+.projectRouteHandle,.projectSort{
+	font-size: 2.4em;
+	color: #333;
+	height: 36px;
+	overflow: hidden;
+	padding: 14px 0;
+}
+
+.projectRouteHandle div,.projectSort div{
+	padding-left: 4.15%;
+	float: left;
+	line-height: 36px;
+}
+
+.projectRouteHandle span{
+	float: left;
+	width: 12.5%;
+	border-radius: 5px;
+	border: 1px solid @tableTextColor;
+	text-align: center;
+	line-height: 34px;
+	margin-right: 2.7%;
+	cursor: pointer;
+}
+
+.projectRouteHandle span:nth-of-type(1){
+	margin-left: 9%;
+}
+
+.projectSort span{
+	float: left;
+	width: 12.5%;
+	margin-left: 9%;
+	line-height: 36px;
+}
+
+.projectSort input{
+    font-size: 1em;
+    padding-left: 2%;
+    outline: 0;
+	float: left;
+	width: 13.7%;
+	margin-left: 9%;
+	margin-top: 2px;
+	height: 30px;
+	border: 1px solid #ccc;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+.coverBanner{
+    line-height: 36px;
+    font-size: 2.4em;
+}
+
+.coverBanner p{
+    padding-left: 3%;
+	font-size:0.9em;
+	line-height:30px;
+	margin:10px 0;
+}
+
+#browse{
+    background-color: #fff;
+    background: url('../../../../img/addImage-little.jpg') no-repeat center;
+    margin-left: 4.15%;
+    width: 375px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid @borderColor;
+}
+#addProgressImg{
+	background-color: #e6503c;
+	//margin-left: 4.15%;
+	padding:0 15px;
+	border-radius:5px;
+	font-size:2em;
+	display:inline-block;
+	margin-left:10%;
+	height: 30px;
+	line-height:30px;
+	overflow: hidden;
+	color:#fff;
+	border: 1px solid @borderColor;
+}
+#browse img{
+    width: 100%;
+    height: 100%;
+}
+#postfiles,#bannerPost,#progressLine{
+	margin-left:4.15%;
+	width:375px;
+	span{
+		font-size:14px;
+		line-height:24px;
+	}
+}
+#bannerBrowse,#activityBanner{
+	background-color: #fff;
+	//background: url('../../../../../img/addImage-little.jpg') no-repeat center;
+	margin-left: 4.15%;
+	//width: 375px;
+	height: 200px;
+	overflow: hidden;
+	//border: 1px solid @borderColor;
+	img{
+		width: auto;
+		height: 100%;
+	}
+}
+.coverBanner button{
+    margin-left: 4.15%;
+}
+
+.coverBanner div input{
+    width: 200%;
+    height: 200px;
+    position: relative;
+    top: -60px;
+    left: -85%;
+}
+//
+//.introduceTitle{
+//    line-height: 36px;
+//    font-size: 2.4em;
+//    padding-left: 4.15%;
+//}
+
+.projectIntroduce div{
+    //border: 1px solid @borderColor;
+}
+
+.introduce{
+    clear: both;
+    padding-left: 4.15%;
+    font-size: 2.4em;
+    line-height: 36px;
+}
+
+.introduce div:nth-of-type(2){
+    width: 45%;
+    height: 200px;
+    border: 1px solid @borderColor;
+}
+//分页
+.pageList{
+	overflow: hidden;
+	width: 95%;
+	margin: 0 auto;
+	position:absolute;
+	top:510px;
+	right:0px;
+	div{
+		text-align: center;
+		float: left;
+		font-size:15px;
+		line-height: 36px;
+		padding: 3px 5px;
+		cursor: pointer;
+	}
+	.firstAndLast:hover{
+		color: @mainBgColor;
+	}
+	.pageContainer{
+		cursor: auto;
+		//width: 57%;
+		//padding: 0 2%;
+		ul{
+			margin-top: 3px;
+			position: relative;
+			white-space: nowrap;
+			overflow: hidden;
+			li{
+				cursor: pointer;
+				float: left;
+				-webkit-user-select: none;
+				border-radius: 100%;
+				width: 25px;
+				line-height: 25px;
+				padding: 5px;
+				text-align: center;
+				margin: 0 5px;
+			}
+		}
+	}
+	.jumpTo{
+		float: left;
+		overflow: hidden;
+		width: 10.5%;
+		input{
+			width: 25px;
+			height: 32px;
+			float: left;
+			outline: none;
+			border: 1px solid @tableTextColor;
+			margin-left: 10%;
+			font-size: 1.1em;
+		}
+		span{
+			margin-left: 10%;
+			float: left;
+		}
+		span:hover{
+			color: @mainBgColor;
+		}
+	}
+}
+
+.pageCount{
+	//text-align: center;
+	//line-height: 36px;
+	//margin-top: 30px;
+	span{
+		//margin: 50px;
+		//font-size: 2.4em;
+	}
+}
+#otherCalendarContainer1{
+	width:70%;
+	font-size:0.9em;
+	.main td{
+		padding:0;
+		line-height:32px;
+	}
+}
+.activeIntroduceContainer,.projectIntroduce{
+	font-size: 2em;
+	padding: 0 3%;
+	margin-bottom:20px;
+	.introduceTitle{
+		margin:10px 0;
+	}
+	.activeIntro{
+		line-height: 30px;
+	}
+	.introduceContents{
+		margin-top: 15px;
+		padding: 15px;
+	}
+}
+#projectAdd,#activeAdd,#projectCompile{
+	margin-bottom:30px;
+	position:relative;
+}
+#progressLine{
+	width:375px;
+	margin-left:4.15%;
+}
+
+
+.projectProgress{
+	overflow:hidden;
+	width:79%;
+	padding:3%;
+
+	background:#fff;
+	.progressTitle{
+		width:10%;
+		height:36px;
+		text-align:center;
+		color:#fff;
+		background:@mainBgColor;
+		line-height:36px;
+		font-size:2.4em;
+		font-weight:normal;
+		padding:0 25px;
+	}
+	.progressMain{
+		width:100%;
+		.progressGroup,.progressTime,.progressContent{
+			padding:10px 0;
+			height:50px;
+			clear:both;
+			.progressSpan{
+				font-size:2em;
+				color:@titleColor;
+				width:10%;
+				float:left;
+				line-height:30px;
+				text-align:right;
+				margin-right:10px;
+			}
+			.groupName,.projectProgressTime{
+				float:left;
+				line-height:28px;
+				color: #999;
+				margin: 0;
+				width:300px;
+				border:solid 1px #DDD;
+				font-size:1.8em;
+				box-sizing:border-box;
+				padding-left:10px;
+			}
+		}
+		.progressContent{
+			height:230px;
+			.progressP{
+				font-size:2em;
+				color:@titleColor;
+				width:7%;
+				line-height:30px;
+			}
+			.progressText{
+				width:66%;
+				height:220px;
+				border:solid 1px #ddd;
+				font-size:1.6em;
+			}
+		}
+		.saveMessage{
+			width:25%;
+			height:40px;
+			text-align:center;
+			color:#fff;
+			background:@mainBgColor;
+			line-height:40px;
+			font-size:2.4em;
+			margin:0 auto;
+			border-radius:6px;
+		}
+		.allDate{
+			float:left;
+			line-height:35px;
+			color: #999;
+			margin: 0;
+			width:300px;
+			border:solid 1px @tableTextColor;
+			font-size:2.4em;
+			box-sizing:border-box;
+			padding-left:10px;
+		}
+	}
+	#progressImgContainer{
+		overflow:hidden;
+		margin-left:5%;
+		.progressImg{
+			float:left;
+			width:230px;
+			margin-top:10px;
+			text-align:center;
+			img{
+				width:150px;
+				height:100px;
+				margin:0 auto;
+			}
+		}
+	}
+}
+#projectProgressList{
+	.progressList{
+		margin-top:20px;
+		padding-left:30px;
+		background:url('../../../../img/timeZero.png') no-repeat left 6px;
+		p{
+			line-height:30px;
+			color:@tableTextColor;
+			font-size:2em;
+		}
+		.progressContent{
+			width:70%;
+		}
+		.progressPictures{
+			overflow:hidden;
+			img{
+				float:left;
+				width:150px;
+				margin-right:50px;
+			}
+		}
+	}
+	.addProjectProgress{
+		width:20%;
+		text-align:center;
+		margin:20px auto;
+		background:@mainBgColor;
+		border-radius:5px;
+		line-height:36px;
+		color:#fff;
+		font-size:2.4em;
+	}
+	.emptyProgress{
+		text-align:center;
+		line-height:50px;
+		font-size:3em;
+		color:@tableTextColor;
+	}
+}
+.cursorPointer{
+	cursor:pointer;
+}
+.backBtn{
+	overflow:hidden;
+	span,a{
+		float:left;
+		color:#333;
+		font-size:1.8em;
+		cursor:pointer;
+		margin-bottom:10px;
+	}
+	span:hover,a:hover{
+		color:#e6503c;
+	}
+	.noChange:hover{
+		color:#333;
+		cursor:auto;
+	}
+}
+.activeIntroduceContainer .introduceContents, .projectIntroduce .introduceContents{
+	padding:0;
+	margin-top:10px;
+}
+#activityContentDetails,#projectContentDetails{
+	width:80%;
+	word-wrap: break-word;
+	height:400px;
+	overflow-y:auto;
+	img{
+		width:50%;
+	}
+	b,strong{
+		font-weight:bold;
+		span{
+			font-weight:bold;
+		}
+	}
+	em{
+		font-style:oblique;
+		span{
+			font-style:oblique;
+		}
+	}
+}
+#bannerPost{
+	.progress{
+		margin:0;
+		margin-top:10px;
+	}
+}
+
+#donateMoneyList {
+	position: relative;
+}
+.previewBtn{
+	width:10%;
+	line-height:32px;
+	border-radius:5px;
+	text-align:center;
+	color:#fff;
+	font-size:18px;
+	margin-left:3%;
+	margin-top:15px;
+	background:green;
+	cursor:pointer;
+}
+.btnBox{
+	width:50%;
+	height:36px;
+	margin:20px auto;
+	div{
+		float:left;
+		width:40%;
+		margin:0 5%;
+		color:#fff;
+		font-size:2.4em;
+		border-radius:5px;
+		cursor:pointer;
+		line-height:36px;
+		height:36px;
+		text-align:center;
+		background:@mainBgColor;
+	}
+}

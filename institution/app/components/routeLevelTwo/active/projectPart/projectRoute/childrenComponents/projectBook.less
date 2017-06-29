@@ -1,0 +1,142 @@
+@lq-maincolor:#E6503C;
+@lq-backcolor:#eee;
+@lq-bordercolor:#dddddd;
+@lq-ftitlecolor:#333;
+@lq-stitlecolor:#666;
+@lq-hintfontcolor:#ddd;
+@lq-borderColor:#ddd;
+
+.projectBook{
+  td{
+      outline: none;
+  }
+  textarea{
+      outline: 0;
+      resize: none;
+  }
+  overflow:hidden;
+  padding: 0 3%;
+  background:#fff;
+  .bookTitle{
+    width:10%;
+    height:36px;
+    text-align:center;
+    color:#fff;
+    background:@lq-maincolor;
+    line-height:36px;
+    font-size:2.4em;
+    font-weight:normal;
+  }
+  .bookMain{
+    width:100%;
+    overflow:hidden;
+    .divInline{
+      display:inline-block;
+      height:50px;
+      width:45%;
+      .bookSpan{
+        font-size:2em;
+        color:@lq-ftitlecolor;
+        width:30%;
+        float:left;
+        line-height:30px;
+        margin-right:10px;
+        text-align:right;
+      }
+      .bookInput{
+        position:relative;
+        float:left;
+        line-height:28px;
+        color: #999;
+        margin: 0;
+        width:60%;
+        border:solid 1px @lq-hintfontcolor;
+        font-size:1.8em;
+        box-sizing:border-box;
+        padding-left:10px;
+      }
+    }
+    .bookTitles{
+      font-size:2em;
+      color:@lq-ftitlecolor;
+      line-height:30px;
+      font-weight:normal;
+    }
+    .bookTextArea{
+      width:85%;
+      font-size: 1.6em;
+      line-height:24px;
+    }
+    .projectBgdArea{
+      height:105px;
+    }
+    .projectTargetArea{
+      height:105px;
+    }
+    .servicePlanArea{
+      height:175px;
+    }
+    .assessmentResultArea{
+      height:175px;
+    }
+    .projectBudgetDetailTitle{
+      #projectBookBudget{
+        width:85%;
+        height:500px;
+        border:solid 1px #ddd;
+        background:url('../../../../../../../img/projectBook.png') no-repeat center;
+        background-size:10%;
+        img{
+          height:100%;
+          display:block;
+          margin:0 auto;
+        }
+      }
+      #progressLine1{
+        width:85%;
+      }
+    }
+    .projectBudgetDetails{
+      width:85%;
+      border-collapse:collapse;
+      tr{
+        width:100%;
+        height:45px;
+        td,th{
+          width:16.6%;
+          font-size:2.4em;
+          line-height:45px;
+          text-align:center;
+          box-sizing:border-box;
+          border:solid 1px #999;
+        }
+        td{
+          font-size:1.8em;
+          line-height:24px;
+        }
+      }
+    }
+    .saveMessage{
+      cursor: pointer;
+      width:20%;
+      height:35px;
+      text-align:center;
+      color:#fff;
+      background:@lq-maincolor;
+      line-height:35px;
+      font-size:2.4em;
+      margin-left:33%;
+      border-radius:6px;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+  }
+}
+.projectEndTime{
+  ::-webkit-input-placeholder{
+    font-size:0.8em;
+  }
+  ::-moz-placeholder {  font-size:0.8em;  }
+　::-moz-placeholder { font-size:0.8em; }
+  :-ms-input-placeholder { font-size:0.8em; }
+}

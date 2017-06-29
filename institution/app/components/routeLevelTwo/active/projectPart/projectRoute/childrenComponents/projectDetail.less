@@ -1,0 +1,238 @@
+
+@tableTextColor:#999;
+@borderColor:#ddd;
+@mainBgColor:#E6503C;
+@backgroundColor:#eee;
+@titleColor:#333;
+@titleColor1:#666;
+.projectPreviewContainer{
+  top:40px;
+  width:432px;
+  height:875px;
+  background:url('../../../../../../../img/phone-model.png') no-repeat center center;
+  position:fixed;
+  left:50%;
+  margin-left:-216px;
+  z-index:100000000;
+  display:none;
+}
+#projectPreviewBox::-webkit-scrollbar {
+  display: none;
+}
+#projectPreviewBox{
+  height:667px;
+  overflow-y:auto;
+  width:375px;
+  position:absolute;
+  background:#eee;
+  left:27.5px;
+  top:107px;
+  .projectDetail_banner{
+    width:100%;
+    height:180px;
+  }
+  //活动进度模块
+  .activeFinish {
+    width: 100%;
+    .activeTitle {
+      padding: 10px 30px;
+      text-align: left;
+      font-size:16px;
+      color:@titleColor;
+      span{
+        color:@mainBgColor ;
+        width: 30px;
+        height:28px;
+        line-height:28px;
+        border: 1px solid @mainBgColor;
+        font-size: 14px;
+        border-radius: 5px;
+        padding:0 1%;
+      }
+      .activeTitleContent{
+        padding-top: 0px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        margin-left: 3%;
+        font-style: normal;
+      }
+    }
+  }
+  .activeEnd{
+    padding: 2% 3% 3% 0;
+    text-align: right;
+    font-size: 14px;
+    color:@titleColor;
+    i{
+      color:@mainBgColor;
+    }
+  }
+  .activeLine{
+    margin: 0 3%;
+    height: 5px;
+    background: rgba(230,80,60,0.5);
+    border-radius: 5px
+  }
+}
+
+//一起捐信息统计模块
+.collect-header ul{
+  width: 100%;
+  text-align: center;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  li{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+    border-bottom: 1px solid @borderColor;
+    border-top: 1px solid @borderColor;
+    padding: 1% 0;
+    font-size: 14px;
+    color:@titleColor ;
+    b{
+      display: block;
+      font-weight: 500;
+      color:@titleColor ;
+      padding-bottom: 3%;
+      font-size: 16px;
+    }
+    span{
+      color: @mainBgColor;
+      font-size: 16px;
+    }
+  }
+  li:nth-child(2){
+    box-sizing:border-box;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
+  }
+}
+.originatingInstitution{
+  padding:0 3%;
+  line-height:40px;
+  margin-top:10px;
+  color:@titleColor;
+  font-size:16px;
+  background:#fff;
+  border-bottom: 1px solid #ddd;
+}
+.groupIntroduce{
+  overflow:hidden;
+  padding:10px 3%;
+  height:80px;
+  background:#fff;
+  position:relative;
+  .attentionBtn{
+    padding:10px;
+    background:#fff;
+    border-radius:5px;
+    line-height:3px;
+    font-size:14px;
+    color:@mainBgColor;
+    position:absolute;
+    top:5px;
+    right:3%;
+    border:solid 1px @mainBgColor;
+  }
+  .groupShowImg{
+    width:100px;
+    height:80px;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .group-message{
+    margin-left:5px;
+    color:@titleColor;
+    line-height:28px;
+    font-size:14px;
+    h3{
+      font-size:14px;
+    }
+    .groupStar{
+      div{
+        float:left;
+        img{
+          display:inline-block;
+          width:13px;
+          height:12px;
+          margin:0 2px;
+        }
+      }
+    }
+  }
+}
+.project-item{
+  margin-top:20px;
+  width:100%;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  border-top:1px solid @borderColor;
+  border-bottom:1px solid @borderColor;
+  background:#fff;
+  li{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+    line-height:40px;
+    text-align:center;
+    color:@titleColor1;
+    cursor:pointer;
+    font-size:14px;
+  }
+  li:nth-child(1){
+    background:@mainBgColor;
+    color:#fff;
+  }
+  li:nth-child(2){
+    box-sizing:border-box;
+    border-left:1px solid @borderColor;
+    border-right:1px solid @borderColor;;
+  }
+}
+.project-detail{
+  padding:20px 3%;
+  box-sizing:border-box;
+  background:#fff;
+  font-size:13px;
+  line-height:24px;
+  margin-bottom:70px;
+  p{
+    width:100%!important;
+    img{
+      width:100%;
+      margin:10px 0;
+    }
+  }
+  b,strong{
+    font-weight:bold;
+  }
+}
+.previewBottom{
+  height:40px;
+  width:96%;
+  padding:10px 2%;
+  position:absolute;
+  bottom:0;
+  background:#fff;
+  span{
+    margin:0 3%;
+    width:44%;
+    line-height:40px;
+    text-align:center;
+    border-radius:5px;
+    color:#fff;
+    background:@mainBgColor;
+    float:left;
+    font-size:18px;
+  }
+}

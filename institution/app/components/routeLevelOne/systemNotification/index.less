@@ -1,0 +1,93 @@
+#systemNotification{
+  padding:0 3%;
+  #systemNotificationList{
+    clear:both;
+    min-height:410px;
+    margin-bottom:20px;
+    .perMessage{
+      padding:30px 10px 20px 0;
+      border-bottom:solid 1px #ddd;
+      color:#333;
+      font-size:2em;
+      .messageContent{
+        color:#333;
+        width:100%;
+        line-height:28px;
+        display: -webkit-box;
+        display: -moz-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:3;
+        margin-bottom:10px;
+        .isRead{
+          color:#e6503c;
+        }
+      }
+      .messageTime{
+        float:left;
+        line-height:30px;
+        color:#999;
+      }
+      .messageOperate{
+        float:right;
+        line-height:30px;
+        a{
+          color:#333;
+          padding:0 25px;
+        }
+        img{
+          display:inline-block;
+          width:20px;
+          margin-right:10px;
+          position:relative;
+          top:3px;
+        }
+      }
+    }
+  }
+  #showMessageBox {
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    left: 50%;
+    width: 600px;
+    text-align: center;
+    z-index:1003;
+    display:none;
+    margin-left:-300px;
+    border-radius:5px;
+    h3 {
+      line-height: 50px;
+      color: #333;
+      font-size:2.8em;
+    }
+    #messageContentBox {
+      width:70%;
+      margin:0 auto;
+      color:#666;
+      line-height:30px;
+      font-size:2em;
+      min-height:200px;
+      text-align:left;
+      word-wrap: break-word;
+    }
+    #messageTime{
+      width:80%;
+      margin:0 auto;
+      text-align:right;
+      color:#666;
+      line-height:30px;
+      font-size:2em;
+    }
+    #closeMessageBox{
+      border-top:1px solid #999;
+      line-height:40px;
+      font-size:2.8em;
+      color:#333;
+      width:100%;
+      cursor:pointer;
+    }
+  }
+}
